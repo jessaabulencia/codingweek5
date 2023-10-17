@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,45 +20,112 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div class="wrap">
+    <div class="header">
+      <h1><img src="assets/images/logo.svg" alt=""></h1>
+      <div class="sp_menu _isSP">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="nav_links">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li><a href="javascript:void(0)">New</a></li>
+        <li><a href="javascript:void(0)">Popular</a></li>
+        <li><a href="javascript:void(0)">Trending</a></li>
+        <li><a href="javascript:void(0)">Categories</a></li>
+      </ul>
+    </div>
 
-  The Bright Future of Web 3.0?
+    <div class="main">
+      <div class="section01">
+        <div class="block01">
+          <div class="blk_img">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="" class="_isPC">
+            <img src="assets/images/image-web-3-mobile.jpg" alt="" class="_isSP">
+          </div>
+          <div class="blk_txt">
+            <div class="blk_txt_head">
+              <p>The Bright<br class="_isSP"> Future of Web 3.0?</p>
+            </div>
+            <div class="txt_txt_desc">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <p><a href="javascript:void(0)" class="btn_more">Read more</a></p>
+            </div>
+          </div>
+        </div>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+        <div class="block02">
+          <h2>New</h2>
+          <div class="news_block">
+            <a href="javascript:void(0)">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </a>
+          </div>
 
-  Read more
+          <div class="news_block">
+            <a href="javascript:void(0)">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </a>
+          </div>
 
-  New 
+          <div class="news_block">
+            <a href="javascript:void(0)">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </a>
+          </div>
+        </div>
+      </div>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+      <div class="section02">
+        <a href="javascript:void(0)">
+        <div class="sec02_block">
+            <div class="sec02_img">
+              <img src="assets/images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div class="sec02_desc">
+              <h3><span>01</span>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+        </a>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+        <a href="javascript:void(0)">
+          <div class="sec02_block">
+            <div class="sec02_img">
+              <img src="assets/images/image-top-laptops.jpg" alt="">
+            </div>
+            <div class="sec02_desc">
+              <h3><span>02</span>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </a>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        <a href="javascript:void(0)">
+          <div class="sec02_block">
+            <div class="sec02_img">
+              <img src="assets/images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div class="sec02_desc">
+              <h3><span>03</span>The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
